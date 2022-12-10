@@ -41,7 +41,7 @@ def special(char_name: str, char_class: str) -> str:
 
 
 def start_training(char_name: str, char_class: str) -> str:
-    """Тренировка в зависимости от персонажа. Тест действий"""
+    """Тренировка в зависимости от персонажа. Тест действий."""
     if char_class == 'warrior':
         print(f'{char_name}, ты Воитель — отличный боец ближнего боя.')
     if char_class == 'mage':
@@ -66,6 +66,7 @@ def start_training(char_name: str, char_class: str) -> str:
 
 
 def choice_char_class() -> str:
+    """Выбор персонажа."""
     approve_choice: str = None
     char_class: str = None
     while approve_choice != 'y':
@@ -90,6 +91,7 @@ def choice_char_class() -> str:
 
 
 if __name__ == '__main__':
+    """Первый запуск."""
     run_screensaver()
     print('Приветствую тебя, искатель приключений!')
     print('Прежде чем начать игру...')
